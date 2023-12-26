@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: title
+title: TIL
 email: yhntgb444@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   site for my own dev TIL 
@@ -29,9 +29,14 @@ url: "https://paranmir.github.io" # the base hostname & protocol for your site, 
 github_username:  paranmir
 
 # Build settings
-theme: minima
+# theme: minima
+# plugins:
+#   - jekyll-feed
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
